@@ -1,6 +1,11 @@
 body {
+  color: black;
   font-family: "Raleway", sans-serif;
   background-color: #f1f1f1;
+}
+a {
+  text-decoration: none;
+  color: inherit;
 }
 header {
   text-align: center;
@@ -14,6 +19,9 @@ h2 {
   font-size: 24px;
   text-transform: uppercase;
   font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .sub-main-title {
   font-size: 15px;
@@ -24,6 +32,7 @@ h2 {
 }
 .nature-article {
   background-color: white;
+  padding: 15px;
 }
 .article-title-desc {
   font-size: 18px;
@@ -31,4 +40,17 @@ h2 {
 .article-time {
   color: gray;
   font-weight: 400;
+}
+.article-main-info {
+  font-size: 15px;
+  line-height: 1.5;
+  /* text-indent: 20px;
+  white-space: 0.5 em;
+  letter-spacing: -0.1 em; */
+}
+.read-more-link {
+  font-size: 15px;
+  border: 1px solid gray;
+  font-weight: bold;
+  padding: 10px 20px;
 }
