@@ -1,26 +1,60 @@
+@font-face {
+  font-family: "PT Sans";
+  src: url("/fonts/PT_Sans/PTSans-Regular.ttf");
+}
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
-div {
-  border: 2px red solid;
-  padding: 5px; /* vh, vmin, % */
-  margin: 1em;
-  width: 90%;
-  /* height: 100px; */
+html {
+  font-size: 16px;
 }
-span {
-  display: block;
+body {
+  font-family: "PT Sans", Helvetica, sans-serif;
+  color: white;
+  line-height: 1.6;
 }
-p {
-  display: inline;
+a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 1rem;
 }
-ul {
+h1 {
+  font-size: 4rem;
+  margin-bottom: 0.5em;
+}
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1em;
+}
+.main-header {
+  background-color: #252529;
+  color: #eeeeee;
+  font-size: 0;
+}
+
+.naw-list-item {
+  display: inline-block;
+}
+
+.nav-link {
+  display: inline-block;
+  padding: 1em;
+}
+
+.first-section {
+  background-color: #252529;
+  background-image: url("./img/background.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  padding: 15em 0 1em;
   text-align: center;
 }
-li {
-  display: inline-block;
-  border: 2px solid green;
-  padding: 2em;
+.center-wrapper {
+  max-width: 1276px;
+  width: 100%;
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 0 2em;
 }
