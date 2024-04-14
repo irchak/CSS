@@ -26,3 +26,22 @@ div {
 /* div + div {
   margin-left: 10px;
 } */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+ul {
+  display: flex;
+  gap: 10px;
+}
+footer {
+  display: flex;
+}
+
+article {
+  border: 5px solid red;
+  width: 33.33%;
+  padding: 10px;
+}
