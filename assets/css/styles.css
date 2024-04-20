@@ -2,33 +2,7 @@
   box-sizing: border-box;
 }
 
-.container {
-  border: 2px solid blue;
-  padding: 5px;
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap-reverse;
-}
-
-.child {
-  border: 2px solid green;
-  padding: 5px;
-  display: flex;
-  /* width: 200px;  */
-  height: 200px;
-  min-width: 200px;
-  max-width: 400px;
-  /* flex-basis: 300px; /* розмір вздовж головної осі, більш пріорітетний ніж висота або ширина значення при якому елементи починають переноситись*/
-  /* flex-shrink: 1; /*дозвіл зменшуватись  */
-  /* flex-grow: 0;  дозвіл зростати */ 
-  flex: 0 1 300px;
-}
-
-.child3{
-  flex: 1 0 200px;
-}
- 
-/* header,
+header,
 aside,
 main,
 footer {
@@ -48,6 +22,7 @@ body {
   max-width: 800px;
   min-width: 320px;
   width: 100%;
+  flex-grow: 1;
 }
 
 aside {
@@ -60,4 +35,4 @@ main {
 
 footer {
   margin-top: auto;
-} */ */
+}
