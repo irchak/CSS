@@ -7,10 +7,6 @@
   padding: 5px;
   height: 200px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column;
-  gap: 5px;
 }
 
 .child {
@@ -19,10 +15,42 @@
 }
 
 .child4 {
-  text-align: center;
-  align-self: stretch;
+  order: 1;
+}
+.child2 {
+  order: 2;
+}
+/* 
+header,
+aside,
+main,
+footer {
+  border: 2px solid orange;
+  padding: 10px;
 }
 
-.child1 {
-  align-self: flex-end;
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
+
+.center-wrapper {
+  display: flex;
+  margin: 0 auto;
+  max-width: 800px;
+  min-width: 320px;
+  width: 100%;
+}
+
+aside {
+  width: 30%;
+}
+
+main {
+  width: 70%;
+}
+
+footer {
+  margin-top: auto;
+} */
