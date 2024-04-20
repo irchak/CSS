@@ -9,6 +9,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-direction: column;
   gap: 5px;
 }
 
@@ -17,6 +18,11 @@
   padding: 5px;
 }
 
-.child3 {
-  margin-left: auto;
+.child4 {
+  text-align: center;
+  align-self: stretch;
+}
+
+.child1 {
+  align-self: flex-end;
 }
