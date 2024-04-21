@@ -1,91 +1,49 @@
 * {
   box-sizing: border-box;
 }
-table {
-  text-align: center;
-  font-family: Georgia, "Times New Roman", Times, serif;
+body {
+  font-size: 1.5em;
 }
-thead {
-  color: white;
-  font-weight: bolder;
+.container {
+  border: 5px solid green;
+  position: relative;
 }
-
-.td1 {
-  background-color: #7787a9;
-}
-.td2 {
-  background-color: #4d628f;
-}
-.td3 {
-  background-color: #2a4271;
-}
-.td4 {
-  background-color: #152857;
-}
-table {
-  border-spacing: 0px;
-  border-collapse: collapse;
+.child {
+  border: 5px solid blue;
+  width: 150px;
+  height: 150px;
+  background-color: azure;
 }
 
-table,
-td,
-th {
-  border: 0px solid grey;
-  padding: 5px;
+.child:nth-child(1) {
+  position: static;
 }
-
-/* td:nth-child(2n) {
-  background-color: #e6e6e6;
-}
-td:nth-child(2n + 1) {
-  background-color: #f3f3f3;
+/* .child:nth-child(2) {
+  position: relative;
+  left: 50px;
+  top: -50px;
+  z-index: -1;
 } */
 
-/* tbody tr:nth-child(2n + 1) td:nth-child(2n + 1) {
-  background-color: #dbdbdb;
+.child:nth-child(3) {
+  position: absolute;
+  background-color: darkorchid;
+  bottom: 50%;
+  left: 100px;
 }
-tfoot tr:nth-child(2n + 1) td:nth-child(2n + 1) {
-  background-color: #dbdbdb;
+header {
+  height: 200px;
+  background-image: url(./../img/background.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
 }
-tbody tr:nth-child(2n) td:nth-child(2n) {
-  background-color: #f3f3f3;
-}
-tfoot tr:nth-child(2n) td:nth-child(2n) {
-  background-color: #f3f3f3;
-}
-tbody tr:nth-child(2n) td:nth-child(2n + 1) {
-  background-color: #e6e6e6;
-}
-tfoot tr:nth-child(2n) td:nth-child(2n + 1) {
-  background-color: #e6e6e6;
-} */
-/* tbody tr:nth-child(2n + 1) {
-  background-color: #dbdbdb;
-}
-
-tbody tr:nth-child(2n) {
-  background-color: #e6e6e6;
-}
-
-tr td:nth-child(2n) {
-  background-color: #f3f3f330;
-} */
-tbody tr:nth-child(2n + 1) *:nth-child(2n + 1),
-tfoot tr:nth-child(2n + 1) *:nth-child(2n + 1) {
-  background-color: #dbdbdb;
-}
-
-/* парні комірки в парних рядках */
-tbody tr:nth-child(2n) *:nth-child(2n),
-tfoot tr:nth-child(2n) *:nth-child(2n) {
-  background-color: #f3f3f3;
-}
-
-/* парні комірки в непарних рядках */
-/* непарні комірки в парних рядках */
-tbody tr:nth-child(2n + 1) *:nth-child(2n),
-tfoot tr:nth-child(2n + 1) *:nth-child(2n),
-tbody tr:nth-child(2n) *:nth-child(2n + 1),
-tfoot tr:nth-child(2n) *:nth-child(2n + 1) {
-  background-color: #e6e6e6;
+.bg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(100, 100, 100, 0.5);
 }
