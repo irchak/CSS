@@ -2,20 +2,54 @@
   box-sizing: border-box;
 }
 
-body {
+header {
+  min-height: 100vh;
   padding: 20px;
-}
-button {
-  background-color: aqua;
-  padding: 1em 2em;
-  border: none;
-  border-radius: 10px;
-  transition: background-color 1s linear;
-  transition: box-shadow 1s linear;
+  color: white;
+  font-family: sans-serif;
+  line-height: 1.2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
 }
 
-button:hover {
-  background-color: blueviolet;
-  box-shadow: 0 0 15px purple;
-  transform: scale(1.1);
+.bg {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url(./../img/showcase\ копія.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  filter: blur(5px);
+  transition: filter 0.5s ease-in-out;
+}
+
+header:hover .bg {
+  filter: blur(0);
+}
+
+img {
+  width: 140px;
+  height: 140px;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 0.5em 0 0.3em;
+  font-weight: bold;
+}
+
+.header-cont {
+  filter: blur(0);
+}
+
+header:hover .header-cont {
+  filter: blur(2px);
 }
