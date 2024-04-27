@@ -2,42 +2,63 @@
   box-sizing: border-box;
 }
 
+:root {
+  font-size: 15px;
+}
 body {
-  background-color: lightpink;
+  padding: 20px;
+  font-family: sans-serif;
 }
 
-p {
-  color: brown;
+article {
+  min-width: 250px;
+  max-width: 350px;
+  width: 100%;
+  padding: 30px;
+  background-image: linear-gradient(to left, #ff6699 0%, #ffcc99 100%);
+  border-radius: 4px;
+  color: white;
+  overflow: hidden;
+  position: relative;
 }
 
-p::first-letter {
-  color: red;
-  font-size: 32px;
+.first-line {
+  display: flex;
+  justify-content: space-between;
 }
 
-p::first-line {
-  color: purple;
-}
-p::selection {
-  color: red;
-}
-
-p::before {
-  content: "Start ....";
+.count {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 15px 0 30px;
 }
 
-p::after {
-  content: "End";
+/* .circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.3);
+  position: absolute;
+  right: -30px;
+  bottom: -75px;
+} */
+
+article::before,
+article::after {
+  content: "";
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.3);
+  position: absolute;
 }
 
-li::marker {
-  color: gray;
+article::before {
+  right: -30px;
+  bottom: -75px;
 }
 
-span::before {
-  content: "<<  ";
-}
-
-span::after {
-  content: "  >>";
+article::after {
+  right: -60px;
+  top: -40px;
 }
