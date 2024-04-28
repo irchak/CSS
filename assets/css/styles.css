@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 
-root {
+:root {
   font-size: 16px;
   --nav-height: 2rem;
 }
@@ -14,6 +14,7 @@ body {
 nav {
   min-height: var(--nav-height);
   display: flex;
+  z-index: 1;
   align-items: center;
   background-color: black;
   color: white;
@@ -26,19 +27,19 @@ nav {
 nav a {
   display: inline-block;
   padding: 0.5em 1em;
-  color: inherit;
+  color: white;
   text-decoration: none;
   text-transform: uppercase;
 }
 
-nav > ul {
+nav ul {
   display: flex;
 }
 
-nav > div {
+.nav {
   padding: 0.5rem;
   margin-left: auto;
-  display: none;
+  display: flex;
 }
 
 header {
@@ -89,5 +90,24 @@ figcaption {
     flex-direction: column;
     gap: 1em;
     padding: 0 3em;
+  }
+  nav {
+    z-index: 1;
+  }
+  nav a {
+    background-color: black;
+    width: 100%;
+  }
+  nav ul {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    right: -100;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+  }
+  .nav-hover:hover ul {
+    right: 0;
   }
 }
